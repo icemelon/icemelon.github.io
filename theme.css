@@ -1,0 +1,24 @@
+.content {
+	width: 75%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#avatar {
+	float: right;
+	margin-top: -50px;
+	margin-right: 20px;
+}
+
+ul.pub {
+	list-style: none;
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+
+ul.pub li:first-child {
+	list-style: circle;
+	font-weight: bold;
+}
