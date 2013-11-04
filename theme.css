@@ -1,3 +1,9 @@
+h1 span {
+	font-family: STKaiti;
+	font-size: 0.8em;
+	color: #888888;
+}
+
 .content {
 	width: 75%;
 	padding-right: 15px;
