@@ -30,6 +30,9 @@
         <td id="universal2">N/A</td>
       </tr>
     </table>
+    <div style='margin-top:20px'>
+      Last update time: <em><span id="timestamp"></span></em>
+    </div>
     
     <script type="text/javascript">
       var socket = null;
@@ -80,6 +83,11 @@
             } else {
               cell.innerHTML = "<span style='color:red'>No</span>";
             }
+
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            var time = document.getElementById('timestamp');
+            time.innerHTML = t;
           };
 
           socket.onclose = function(data) {
