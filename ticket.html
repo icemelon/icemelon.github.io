@@ -5,11 +5,9 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<meta name="author" content="Haichen Shen">
-    <script src='webrtc.io.js'></script>
   	<title>Test</title>
   </head>
   <body>
-  	<!--script src="js/jquery-1.10.2.min.js"></script-->
     <table border='1'>
       <tr>
         <th width='200px'>Ticket</th>
@@ -34,57 +32,65 @@
     </table>
     
     <script type="text/javascript">
-      socket = new WebSocket('ws://127.0.0.1:8000');
-      running = false;
+      var socket = null;
+      var running = false;
+      var interval = 1000;
 
-      socket.onopen = function() {
-        console.log('socket connected');
-        socket.onerror = function(err) {
-          console.log('onerror');
-          console.log(err);
+      connect = function() {
+        if (running)
+          return;
+
+        console.log('start to connect');
+        socket = new WebSocket('ws://barb.cs.washington.edu:8000');
+
+        socket.onopen = function() {
+          console.log('socket connected');
+          socket.onerror = function(err) {
+            console.log('onerror');
+            console.log(err);
+          };
+
+          socket.onmessage = function(msg) {
+            var data = JSON.parse(msg.data);
+            console.log(data);
+            var cell = document.getElementById('disney');
+            if (data['disney']) {
+              cell.innerHTML = "<span style='color:green'>Yes</span>";
+              alert('Disney ticket now is AVAILABLE!')
+            } else {
+              cell.innerHTML = "<span style='color:red'>No</span>";
+            }
+            cell = document.getElementById('universal1');
+            if (data['universal1']) {
+              cell.innerHTML = "<span style='color:green'>Yes</span>";
+              alert('Universal [1-Day] ticket now is AVAILABLE!')
+            } else {
+              cell.innerHTML = "<span style='color:red'>No</span>";
+            }
+            cell = document.getElementById('universal2');
+            if (data['universal2']) {
+              cell.innerHTML = "<span style='color:green'>Yes</span>";
+              alert('Universal [2-Day] ticket now is AVAILABLE!')
+            } else {
+              cell.innerHTML = "<span style='color:red'>No</span>";
+            }
+            cell = document.getElementById('seaworld');
+            if (data['seaworld']) {
+              cell.innerHTML = "<span style='color:green'>Yes</span>";
+            } else {
+              cell.innerHTML = "<span style='color:red'>No</span>";
+            }
+          };
+
+          socket.onclose = function(data) {
+            console.log('socket closed');
+            running = false;
+          };
+
+          running = true;
+          refresh();
         };
-
-        socket.onmessage = function(msg) {
-          var data = JSON.parse(msg.data);
-          console.log(data);
-          var cell = document.getElementById('disney');
-          if (data['disney']) {
-            cell.innerHTML = "<span style='color:green'>Yes</span>";
-            alert('Disney ticket now is AVAILABLE!')
-          } else {
-            cell.innerHTML = "<span style='color:red'>No</span>";
-          }
-          cell = document.getElementById('universal1');
-          if (data['universal1']) {
-            cell.innerHTML = "<span style='color:green'>Yes</span>";
-            alert('Universal [1-Day] ticket now is AVAILABLE!')
-          } else {
-            cell.innerHTML = "<span style='color:red'>No</span>";
-          }
-          cell = document.getElementById('universal2');
-          if (data['universal2']) {
-            cell.innerHTML = "<span style='color:green'>Yes</span>";
-            alert('Universal [2-Day] ticket now is AVAILABLE!')
-          } else {
-            cell.innerHTML = "<span style='color:red'>No</span>";
-          }
-          cell = document.getElementById('seaworld');
-          if (data['seaworld']) {
-            cell.innerHTML = "<span style='color:green'>Yes</span>";
-
-          } else {
-            cell.innerHTML = "<span style='color:red'>No</span>";
-          }
-        };
-
-        socket.onclose = function(data) {
-          console.log('socket closed');
-          running = false;
-        };
-
-        running = true;
-        refresh();
-      };
+      }
 
       refresh = function() {
         if (running) {
@@ -94,7 +100,9 @@
         }
       }
 
-      setInterval(refresh, 3600 * 1000);
-    </script>
+      connect();
+      setInterval(connect, interval);
+      setInterval(refresh, interval);
+     </script>
   </body>
 </html>
