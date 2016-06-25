@@ -1,12 +1,65 @@
 body {
-	background: #F8F8F8;
+	/*background: #F8F8F8;*/
 	padding-left: 50px;
 	font:15px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+header {
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px 0 10px 50px;
+	z-index: 999;
+	background-color: #fff;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	-ms-transition: height 0.3s;
+	-o-transition: height 0.3s;
+	transition: height 0.3s; 
+	-webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.2);
+ 	box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.2);
+}
+
 h1 {
 	font-family: 'Open Sans', sans-serif;
-	/*font-weight: bold;*/
+}
+
+#avatar {
+	height: 180px;
+	border-radius: 8px;
+}
+
+#status {
+	display: block;
+}
+
+#rest {
+	display: block;
+}
+
+#main {
+	margin-top: 220px;
+	padding-top: 20px;
+}
+
+header.small {
+	height: 90px;
+	padding: 0px 0 0px 50px;
+}
+header.small h1 {
+	font-size: 30px;
+}
+header.small #avatar {
+	margin-top: 5px;
+	height: 80px;
+	border-radius: 4px;
+}
+header.small #rest {
+	display: none;
 }
 
 h1 span {
@@ -20,13 +73,6 @@ h3 {
 	margin-bottom: 20px;
 }
 
-.content {
-}
-
-#avatar {
-	width: 200px;
-	border-radius: 8px;
-}
 
 .icon {
 	height: 28px;

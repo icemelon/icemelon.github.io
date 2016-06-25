@@ -30,38 +30,45 @@
     ga('create', 'UA-39033025-2', 'washington.edu');
     ga('send', 'pageview');
   </script>
+  
+  
 </head>
 <body>
 	<div class="container-fluid">
-  <div class="content">
-	  <div class="page-header">
-      <div class="row">
-        <div class="col-md-7">
-    	    <h1>Haichen Shen <span>(沈海晨)</span></h1>
+  <header>
+    <!-- <div class="page-header"> -->
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Haichen Shen <span>(沈海晨)</span></h1>
+        <div id="status">
+          <strong class="text-success">Ph.D student</strong> @ <a href="http://netlab.cs.washington.edu">Network Lab</a>,
+          <a href="http://www.cs.washington.edu">CSE</a>,
+          <a href="http://www.washington.edu">UW</a>
+        </div>
+        <div id="rest">
           <p>
-            <strong class="text-success">Ph.D student</strong> @ <a href="http://netlab.cs.washington.edu">Network Lab</a>,
-            <a href="http://www.cs.washington.edu">CSE</a>,
-            <a href="http://www.washington.edu">UW</a>
-            <br/>
-            <span class="text-success">haichen@cs.washington.edu</span><br/>
-            CSE 391, Paul G. Allen Center<br>
-            <!-- 185 Stevens Way, AC101, Box 352350, Seattle, WA 98195 -->
+          <span class="text-success">haichen@cs.washington.edu</span><br>
+          CSE 391, Paul G. Allen Center<br>
           </p>
+          <!-- 185 Stevens Way, AC101, Box 352350, Seattle, WA 98195 -->
           <p>
           <a href="https://www.facebook.com/shenhaichen"><img src="icon/facebook.png" class="icon"></a>
           <a href="https://twitter.com/shenhaichen"><img src="icon/twitter.png" class="icon"></a>
           <a href="https://www.linkedin.com/in/haichenshen"><img src="icon/linkedin.png" class="icon"></a>
           </p>
         </div>
-        <div class="col-md-4">
-          <img src="img/haichen.jpg" alt="Haichen Shen" id="avatar"/>
-        </div>
       </div>
-	  </div>
+      <div class="col-md-4">
+        <img src="img/haichen.jpg" alt="Haichen Shen" id="avatar"/>
+      </div>
+    </div>
+  <!-- </div> -->
+  </header>
 
+  <div id="main">
     <div class="row">
       <div class="col-md-10">
-  	    <p>
+        <p>
           I'm a fourth year Ph.D. student in Computer Science at University of Washington, working with <a href="http://www.cs.washington.edu/people/faculty/arvind">Prof. Arvind Krishnamurthy</a> and <a href="https://www.microsoft.com/en-us/research/people/matthaip/">Dr. Matthai Philipose</a>. 
           Previously I worked with <a href="http://djw.cs.washington.edu/">Prof. David Wetherall</a> and <a href="http://www3.cs.stonybrook.edu/~arunab/">Prof. Aruna Balasumbramanian</a>.
           I received my bachelor degree in <a href="http://itcs.tsinghua.edu.cn/en/"> Institute for Theoretical Computer Science</a> (supervised by <a href="http://iiis.tsinghua.edu.cn/yao/">Prof. Andrew Yao</a>) at Tsinghua University.
@@ -152,10 +159,11 @@
       </div>
       <br>
       <small>Last update: June 2016</small>
+    </div>
   </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/holder.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/header.js"></script>
 </body>
 </html>
