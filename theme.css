@@ -28,6 +28,11 @@ h3 {
 	border-radius: 8px;
 }
 
+.icon {
+	height: 28px;
+	margin-right: 5px;
+}
+
 ul {
 	list-style: circle;
 	padding-left: 20px;
