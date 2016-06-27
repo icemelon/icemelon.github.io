@@ -11,7 +11,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding: 20px 0 10px 50px;
+	padding: 20px 0 10px 65px;
 	z-index: 999;
 	background-color: #fff;
 	-webkit-transition: height 0.3s;
@@ -48,7 +48,7 @@ h1 {
 
 header.small {
 	height: 90px;
-	padding: 0px 0 0px 50px;
+	padding: 0px 0 0px 65px;
 }
 header.small h1 {
 	font-size: 30px;
