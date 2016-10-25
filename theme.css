@@ -43,11 +43,6 @@ h1 {
 	display: block;
 }
 
-#rest {
-	display: block;
-	clear: both;
-}
-
 #main {
 	margin-top: 220px;
 	padding-top: 20px;
@@ -65,7 +60,13 @@ header.small #avatar {
 	height: 80px;
 	border-radius: 4px;
 }
-header.small #rest {
+header.small #address {
+	display: none;
+}
+header.small #email {
+	display: none;
+}
+header.small #social {
 	display: none;
 }
 
@@ -97,10 +98,12 @@ ul.project li {
 
 .pubtitle {
 	font-size: 17px;
+    margin-bottom: 5px;
 }
 
 .author {
 	font-style: italic;
+    margin-bottom: 2px;
 }
 
 .bs-callout {
@@ -126,50 +129,62 @@ ul.project li {
 
 	header {
 		width: 100%;
-		height: 160px; /* 130 + 40 */
+		height: 120px; /* 80 + 40 */
 		padding-left: 25px;
 	}
 
+    header div {
+        font-size: 12px;
+    }
+
 	h1 {
 		font-family: 'Open Sans', sans-serif;
-		font-size: 25px;
+		font-size: 20px;
 		margin: 0px 0 5px 0;
 	}
 
 	#avatar {
-		height: 125px;
+		height: 80px;
 		border-radius: 8px;
-		margin-top: 0px;
+		margin-top: 5px;
 	}
+    
+    #address {
+        display: none;
+    }
+
+    #social {
+        margin-top: 3px;
+    }
 
 	.icon {
 		height: 20px;
 		margin-right: 5px;
 	}
 
-	header p {
-		margin-bottom: 0;
-	}
 
 	header.small {
-		height: 80px;
+		height: 65px;
 		padding: 5px 0 5px 25px;
 	}
 	header.small h1 {
-		font-size: 25px;
-		margin-top: 10px;
+		font-size: 20px;
+		margin: 10px 0 5px 0;
 	}
 	header.small #avatar {
 		margin-top: 5px;
-		height: 60px;
+		height: 50px;
 		border-radius: 4px;
 	}
-	header.small #rest {
+	header.small #email {
 		display: none;
 	}
+    header.small #social {
+        display: none;
+    }
 
 	#main {
-		margin-top: 160px;
+		margin-top: 120px;
 		padding-top: 10px;
 	}
 }
