@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Haichen Shen">
-	<meta name="description" content="Haichen's homepage">
-	<title>Haichen Shen's Homepage</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Haichen Shen">
+  <meta name="description" content="Haichen's homepage">
+  <title>Haichen Shen's Homepage</title>
 
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-  <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <!-- Custom styles for this template -->
-	<link href="theme.css" rel="stylesheet">
+  <link href="theme.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -26,17 +27,16 @@
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-39033025-2', 'washington.edu');
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39033025-2', 'auto');
     ga('send', 'pageview');
   </script>
-  
-  
 </head>
+
 <body>
-	<div class="container-fluid">
+  <div class="container-fluid">
   <header>
-    <!-- <div class="page-header"> -->
     <div class="row">
       <div class="col-header">
         <img src="img/haichen.jpg" alt="Haichen Shen" id="avatar"/>
@@ -44,12 +44,12 @@
       <div class="col-header">
         <h1>Haichen Shen <span>(沈海晨)</span></h1>
         <div id="status">
-          <strong class="text-success">Ph.D student</strong> @ <a href="http://netlab.cs.washington.edu">Network Lab</a>,
+          <span class="text-success highlight">Ph.D student</span> @ <a href="http://netlab.cs.washington.edu">Network Lab</a>,
           <a href="http://www.cs.washington.edu">CSE</a>,
           <a href="http://www.washington.edu">UW</a>
         </div>
         <div id="email">
-          <span class="text-success">haichen@cs.washington.edu</span><br>
+          <span class="text-success">haichen at cs.washington.edu</span><br>
         </div>
         <div id="address">
           CSE 391, Paul G. Allen Center<br>
@@ -63,16 +63,25 @@
       </div>
       
     </div>
-  <!-- </div> -->
   </header>
 
   <div id="main">
     <div class="row">
       <div class="col-md-10">
         <p>
-          I'm a fourth year Ph.D. student in Computer Science at University of Washington, working with <a href="http://www.cs.washington.edu/people/faculty/arvind">Prof. Arvind Krishnamurthy</a> and <a href="https://www.microsoft.com/en-us/research/people/matthaip/">Dr. Matthai Philipose</a>. 
-          Previously I worked with <a href="http://djw.cs.washington.edu/">Prof. David Wetherall</a> and <a href="http://www3.cs.stonybrook.edu/~arunab/">Prof. Aruna Balasumbramanian</a>.
-          I received my bachelor degree in <a href="http://itcs.tsinghua.edu.cn/en/"> Institute for Theoretical Computer Science</a> (supervised by <a href="http://iiis.tsinghua.edu.cn/yao/">Prof. Andrew Yao</a>) at Tsinghua University.
+          I'm a fifth year Ph.D. student in Computer Science at University of
+          Washington, working
+          with <a href="http://www.cs.washington.edu/people/faculty/arvind">Prof. Arvind
+          Krishnamurthy</a>
+          and <a href="https://www.microsoft.com/en-us/research/people/matthaip/">Dr. Matthai
+          Philipose</a>.  Previously I worked
+          with <a href="http://djw.cs.washington.edu/">Prof. David Wetherall</a>
+          and <a href="http://www3.cs.stonybrook.edu/~arunab/">Prof. Aruna
+          Balasumbramanian</a>.  I received my bachelor degree
+          in <a href="http://itcs.tsinghua.edu.cn/en/"> Institute for
+          Theoretical Computer Science</a> (supervised
+          by <a href="http://iiis.tsinghua.edu.cn/yao/">Prof. Andrew Yao</a>) at
+          Tsinghua University.
           <!--I also interned at Microsoft Research (2014) and Microsof Research Asia (2010-2012). -->
         </p>
       </div>
@@ -82,88 +91,327 @@
       <div class="col-md-10">
         <h3>Research Projects</h3>
         <ul class="project">
-          <li><a href="http://mobilehub.cs.washington.edu">Mobile Hub</a>: leverages heterogeneous hardware, such as sensor hubs, to improve the power efficiency of <i>always-on</i> sensing applications on mobile phones. MobileHub rewrites the binary of a given application without programmer effort to make it more power efficient.
+          <li><a href="http://syslab.cs.washington.edu/research/specialization">
+            Sequential Model Specialization</a>: aims to accelerate the speed of
+            recognizing entities such as objects, people, scenes and activities
+            in every frame of video footage of day-to-day life, by exploiting
+            "specialized" convolutional neural networks (CNNs) under highly
+            skewed distribution. When applied to recognizing faces in TV shows
+            and movies we realized end-to-end classification speedups of
+            2.4-7.8x/2.6-11.2x (on GPU/CPU) relative to a state-of-the-art
+            convolutional neural network, at competitive accuracy.
           </li>
-          <li><a href="http://uwnetworkslab.github.io/metasync/">Metasync</a>: a secure and reliable file synchronization service that uses multiple cloud synchronization services as untrusted storage providers. We devised a novel variant of Paxos that provides efficient and consistent updates on top of the unmodified APIs exported by existing services.
+          <li><span class="text-info highlight">MCDNN</span>: an
+          approximation-based execution framework for applying computer vision
+          to video on cloud-backed mobile devices using Deep Neural
+          Networks(DNNs). The computational demands of DNNs are high enough
+          that, without careful resource management, such applications strain
+          device battery, and cloud cost budgets. MCDNN allows each request to
+          be served approximately, by systematically trading off DNN
+          classification accuracy for resource use.
           </li>
-          <li><span class="text-info">MCDNN</span>: an approximation-based execution framework for applying computer vision to video on cloud-backed mobile devices using Deep Neural Networks(DNNs). The computational demands of DNNs are high enough that, without careful resource management, such applications strain device battery, and cloud cost budgets. MCDNN allows each request to be served approximately, by systematically trading off DNN classification accuracy for resource use.
+          <li><a href="http://uwnetworkslab.github.io/metasync/">Metasync</a>: a
+          secure and reliable file synchronization service that uses multiple
+          cloud synchronization services as untrusted storage providers. We
+          devised a novel variant of Paxos that provides efficient and
+          consistent updates on top of the unmodified APIs exported by existing
+          services.
+          </li>
+          <li><a href="http://mobilehub.cs.washington.edu">Mobile Hub</a>:
+          leverages heterogeneous hardware, such as sensor hubs, to improve the
+          power efficiency of <i>always-on</i> sensing applications on mobile
+          phones. MobileHub rewrites the binary of a given application without
+          programmer effort to make it more power efficient.
           </li>
         </ul>
       </div>
     </div>
-    
     <div class="row">
       <div class="col-md-10">
         <h3>Selected Publications</h3>
-        <div class="bs-callout bs-callout-info">
+        <div class="publications">
+        <div class="paper">
+          <div class="pubtitle">Fast Video Classification via Adaptive Cascading of Deep Models</div>
+          <div class="author">Haichen Shen, Matthai Philipose, Arvind Krishnamurthy</div>
+          <div class="conf"> CVPR, July 2017 <span class="highlight">(spotlight)</span> </div>
+          <div class="btn-group">
+            <a class="btn btn-default btn-xs abstract-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_specialization').slideToggle('fast');return false;">
+              <i class="fa fa-chevron-down"></i> abstract
+            </a>
+            <a class="btn btn-default btn-xs" href="https://arxiv.org/abs/1611.06453">
+              <i class="fa fa-file-pdf-o"></i> paper
+            </a>
+            <a class="btn btn-default btn-xs" href="http://syslab.cs.washington.edu/research/specialization">
+              <i class="fa fa-external-link"></i> Project
+            </a>
+          </div>
+          <div id="abstract_specialization" class="abstract well">
+            Recent advances have enabled “oracle” classifiers that can classify
+            across many classes and input distributions with high accuracy
+            without retraining. However, these classifiers are relatively
+            heavyweight, so that applying them to classify video is costly. We
+            show that day-to-day video exhibits highly skewed class
+            distributions over the short term, and that these distributions can
+            be classified by much simpler models. We formulate the problem of
+            detecting the short-term skews online and exploiting models based on
+            it as a new sequential decision making problem dubbed the Online
+            Bandit Problem, and present a new algorithm to solve it. When
+            applied to recognizing faces in TV shows and movies, we realize
+            end-toend classification speedups of 2.4-7.8×/2.6-11.2× (on GPU/CPU)
+            relative to a state-of-the-art convolutional neural network, at
+            competitive accuracy.
+          </div>
+        </div>
+        <div class="paper">
           <div class="pubtitle">MCDNN: An Approximation-Based Execution Framework for Deep Stream Processing Under Resource Constraints</div>
-          <div class="author">Seungyeop Han*, <strong>Haichen Shen*</strong>, Matthai Philipose, Sharad Agarwal, Alec Wolman, Arvind Krishnamurthy</div>
-          MobiSys, Jun. 2016 [<a href="papers/mcdnn.pdf">paper</a>] [<a href="https://www.youtube.com/watch?v=DJCO1mmDlno">video</a>] [<a href="slides/mcdnn-mobisys.pdf">slides</a>] [<a href="https://www.youtube.com/watch?v=gL8xdM6NCug&index=2&list=PL6jLuiS6wP5ZS2zV1ofDomdczF53Evm35">talk</a>] <small>(*equally contributed)</small>
+          <div class="author">Seungyeop Han*, Haichen Shen*, Matthai Philipose, Sharad Agarwal, Alec Wolman, Arvind Krishnamurthy</div>
+          <div class="conf"> MobiSys, Jun. 2016 (*equally contributed) </div>
+          <div class="btn-group">
+            <a class="btn btn-default btn-xs abstract-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_mcdnn').slideToggle('fast');return false;">
+              <i class="fa fa-chevron-down"></i> abstract
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/mcdnn.pdf">
+              <i class="fa fa-file-pdf-o"></i> paper
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/mcdnn.bib">
+              <i class="fa fa-file-o"></i> bibtex
+            </a>
+            <a class="btn btn-default btn-xs" href="slides/mcdnn_mobisys.pdf">
+              <i class="fa fa-file-pdf-o"></i> slides
+            </a>
+            <a class="btn btn-default btn-xs" href="https://www.youtube.com/watch?v=DJCO1mmDlno">
+              <i class="fa fa-film"></i> 1-min video
+            </a>
+            <a class="btn btn-default btn-xs" href="https://www.youtube.com/watch?v=gL8xdM6NCug&index=2&list=PL6jLuiS6wP5ZS2zV1ofDomdczF53Evm35">
+              <i class="fa fa-film"></i> talk
+            </a>
+          </div>
+          <div id="abstract_mcdnn" class="abstract well">
+            We consider applying computer vision to video on cloud-backed mobile
+            devices using Deep Neural Networks (DNNs). The computational demands
+            of DNNs are high enough that, without careful resource management,
+            such applications strain device battery, wireless data, and cloud
+            cost budgets. We pose the corresponding resource management problem,
+            which we call Approximate Model Scheduling, as one of serving a
+            stream of heterogeneous (i.e., solving multiple classification
+            problems) requests under resource constraints. We present the design
+            and implementation of an optimizing compiler and runtime scheduler
+            to address this problem. Going beyond traditional resource
+            allocators, we allow each request to be served approximately, by
+            systematically trading off DNN classification accuracy for resource
+            use, and remotely, by reasoning about on-device/cloud execution
+            trade-offs. To inform the resource allocator, we characterize how
+            several common DNNs, when subjected to state-of-the art
+            optimizations, trade off accuracy for resource use such as memory,
+            computation, and energy. The heterogeneous streaming setting is a
+            novel one for DNN execution, and we introduce two new and powerful
+            DNN optimizations that exploit it. Using the challenging continuous
+            mobile vision domain as a case study, we show that our techniques
+            yield significant reductions in resource usage and perform
+            effectively over a broad range of operating conditions.
+          </div>
         </div>
-        <div class="bs-callout bs-callout-info">
+        <div class="paper">
           <div class="pubtitle">Enhancing Mobile Apps To Use Sensor Hubs Without Programmer Effort</div>
-          <div class="author"><strong>Haichen Shen</strong>, Aruna Balasubramanian, Anthony LaMarca, David Wetherall</div>
-          <!-- <span class="label label-danger">Best paper</span></li> -->
-          Ubicomp, Sept. 2015 [<a href="papers/mobilehub.pdf">paper</a>] [<a href="slides/mobilehub_ubicomp.pdf">slides</a>]<br>
-          <strong><span class="text-danger">Best paper award, Gaetano Borriello best student paper award</span></strong>
+          <div class="author">Haichen Shen, Aruna Balasubramanian, Anthony LaMarca, David Wetherall</div>
+          <div class="conf">Ubicomp, Sept. 2015 <span class="text-success highlight">(Best paper award, Gaetano Borriello best student paper award)</span> </div>
+          <div class="btn-group">
+            <a class="btn btn-default btn-xs abstract-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_mobilehub').slideToggle('fast');return false;">
+              <i class="fa fa-chevron-down"></i> abstract
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/mobilehub.pdf">
+              <i class="fa fa-file-pdf-o"></i> paper
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/mobilehub.bib">
+              <i class="fa fa-file-o"></i> bibtex
+            </a>
+            <a class="btn btn-default btn-xs" href="slides/mobilehub_ubicomp.pdf">
+              <i class="fa fa-file-pdf-o"></i> slides
+            </a>
+            <a class="btn btn-default btn-xs" href="http://mobilehub.cs.washington.edu/">
+              <i class="fa fa-external-link"></i> project
+            </a>
+         </div>
+         <div id="abstract_mobilehub" class="abstract well">
+           Always-on continuous sensing apps drain the battery quickly because
+           they prevent the main processor from sleeping. Instead, sensor hub
+           hardware, available in many smartphones today, can run continuous
+           sensing at lower power while keeping the main processor
+           idle. However, developers have to divide functionality between the
+           main processor and the sensor hub. We implement MobileHub, a system
+           that automatically rewrites applications to leverage the sensor hub
+           without additional programming effort. MobileHub uses a combination
+           of dynamic taint tracking and machine learning to learn when it is
+           safe to leverage the sensor hub without affecting application
+           semantics. We implement MobileHub in Android and prototype a sensor
+           hub on a 8-bit AVR micro-controller. We experiment with 20
+           applications from Google Play. Our evaluation shows that MobileHub
+           significantly reduces power consumption for continuous sensing apps.
+         </div>
         </div>
-        <div class="bs-callout bs-callout-info">
+        <div class="paper">
           <div class="pubtitle">MetaSync: File Synchronization Across Multiple Untrusted Storage Services</div>
-          <div class="author">Seungyeop Han, <strong>Haichen Shen</strong>, Taesoo Kim, Arvind Krishnamurthy, Thomas Anderson, David Wetherall</div>
-          USENIX ATC, July 2015 [<a href="papers/metasync.pdf">paper</a>]
+          <div class="author">Seungyeop Han, Haichen Shen, Taesoo Kim, Arvind Krishnamurthy, Thomas Anderson, David Wetherall</div>
+          <div class="conf">USENIX ATC, July 2015</div>
+          <div class="btn-group">
+            <a class="btn btn-default btn-xs abstract-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_metasync').slideToggle('fast');return false;">
+              <i class="fa fa-chevron-down"></i> abstract
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/metasync.pdf">
+              <i class="fa fa-file-pdf-o"></i> paper
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/metasync.bib">
+              <i class="fa fa-file-o"></i> bibtex
+            </a>
+            <a class="btn btn-default btn-xs" href="http://uwnetworkslab.github.io/metasync/">
+              <i class="fa fa-external-link"></i> project
+            </a>
+          </div>
+          <div id="abstract_metasync" class="abstract well">
+            <p> Cloud-based file synchronization services, such as Dropbox, are
+            a worldwide resource for many millions of users.  However,
+            individual services often have tight resource limits, suffer from
+            temporary outages or even shutdowns, and sometimes silently corrupt
+            or leak user data. </p>
+            <p> We design, implement, and evaluate MetaSync, a secure and
+            reliable file synchronization service that uses multiple cloud
+            synchronization services as untrusted storage providers. To make
+            MetaSync work correctly, we devise a novel variant of Paxos that
+            provides efficient and consistent updates on top of the unmodified
+            APIs exported by existing services. Our system automatically
+            redistributes files upon reconfiguration of providers. </p>
+            <p> Our evaluation shows that MetaSync provides low update latency
+            and high update throughput while being more trustworthy and
+            available. MetaSync outperforms its underlying cloud services by
+            1.2-10× on three realistic workloads. </p>
+          </div>
         </div>
-        <div class="bs-callout bs-callout-info">
+        <div class="paper">
           <div class="pubtitle">Enable Flexible Spectrum Access with Spectrum Virtualization</div>
-          <div class="author">Kun Tan, <strong>Haichen Shen</strong>, Jiansong Zhang, Yongguang Zhang</div>
-          DySPAN, Oct. 2012 [<a href="papers/dyspan12.pdf">paper</a>]
+          <div class="author">Kun Tan, Haichen Shen, Jiansong Zhang, Yongguang Zhang</div>
+          <div class="conf">DySPAN, Oct. 2012</div>
+          <div class="btn-group">
+            <a class="btn btn-default btn-xs abstract-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_virtual_spectrum').slideToggle('fast');return false;">
+              <i class="fa fa-chevron-down"></i> abstract
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/virtual_spectrum.pdf">
+              <i class="fa fa-file-pdf-o"></i> paper
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/virtual_spectrum.bib">
+              <i class="fa fa-file-o"></i> bibtex
+            </a>
+          </div>
+          <div id="abstract_virtual_spectrum" class="abstract well">
+            <p>Enabling flexible spectrum access (FSA) in existing wireless
+              networks is challenging due to the limited spectrum
+              programmability – the ability to change spectrum properties of a
+              signal to match an arbitrary frequency allocation. This paper
+              argues that spectrum programmability can be separated from general
+              wireless physical layer (PHY) modulation. Therefore, we can
+              support flexible spectrum programmability by inserting a new
+              spectrum virtualization layer (SVL) directly below traditional
+              wireless PHY, and enable FSA for wireless networks without
+              changing their PHY designs.</p>
+            <p>SVL provides a virtual baseband abstraction to wireless PHY,
+              which is static, contiguous, with a desirable width defined by the
+              PHY. At the sender side, SVL reshapes the modulated baseband
+              signals into waveform that matches the dynamically allocated
+              physical frequency bands – which can be of different width, or
+              non-contiguous – while keeping the modulated information
+              unchanged.  At the receiver side, SVL performs the inverse
+              reshaping operation that collects the waveform from each physical
+              band, and reconstructs the original modulated signals for PHY. All
+              these reshaping operations are performed at the signal level and
+              therefore SVL is agnostic and transparent to upper PHY. We have
+              implemented a prototype of SVL on a software radio platform, and
+              tested it with various wireless PHYs. Our experiments show SVL is
+              flexible and effective to support FSA in existing wireless
+              networks.</p>
+          </div>
         </div>
-        <div class="bs-callout bs-callout-info">
+        <div class="paper">
           <div class="pubtitle">Frame Retransmissions Considered Harmful: Improving Spectrum Efficiency Using Micro-ACKs</div>
-          <div class="author">Jiansong Zhang, <strong>Haichen Shen</strong>, Kun Tan, Ranveer Chandra, Yongguang Zhang, Qian Zhang</div>
-          MobiCom, Aug. 2012 [<a href="papers/uack.pdf">paper</a>]
+          <div class="author">Jiansong Zhang, Haichen Shen, Kun Tan, Ranveer Chandra, Yongguang Zhang, Qian Zhang</div>
+          <div class="conf">MobiCom, Aug. 2012</div>
+          <div class="btn-group">
+            <a class="btn btn-default btn-xs abstract-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_uack').slideToggle('fast');return false;">
+              <i class="fa fa-chevron-down"></i> abstract
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/uack.pdf">
+              <i class="fa fa-file-pdf-o"></i> paper
+            </a>
+            <a class="btn btn-default btn-xs" href="papers/uack.bib">
+              <i class="fa fa-file-o"></i> bibtex
+            </a>
+          </div>
+          <div id="abstract_uack" class="abstract well">
+            Retransmissions reduce the efficiency of data communication in
+            wireless networks because of: (i) per-retransmission packet headers,
+            (ii) contention overhead on every retransmission, and (iii)
+            redundant bits in every retransmission. In fact, every
+            retransmission nearly doubles the time to successfully deliver the
+            packet. To improve spectrum efficiency in a lossy environment, we
+            propose a new in-frame retransmission scheme using µACKs. Instead of
+            waiting for the entire transmission to end before sending the ACK,
+            the receiver sends smaller µACKs for every few symbols, on a
+            separate narrow feedback channel. Based on these µACKs, the sender
+            only retransmits the lost symbols after the last data symbol in the
+            frame, thereby adaptively changing the frame size to ensure it is
+            successfully delivered. We have implemented µACK on the Sora
+            platform.  Experiments with our prototype validate the feasibility
+            of symbollevel µACK. By significantly reducing the retransmistion
+            overhead, the sender is able to aggressively use higher data rate
+            for a lossy link. Both improve the overall network efficiency. Our
+            experimental results from a controlled environment and an 9-node
+            software radio testbed show that µACK can have up to 140% throughput
+            gain over 802.11g and up to 60% gain over the best known
+            retransmission scheme.
+          </div>
         </div>
-        <div class="bs-callout bs-callout-info">
-          <div class="pubtitle">MPAP: virtualization architecture for heterogenous wireless APs</div>
-          <div class="author">Yong He, Ji Fang, Jiansong Zhang, <strong>Haichen Shen</strong>, Kun Tan, and Yongguang Zhang</div>
-          SIGCOMM, Aug. 2010 [<a href="papers/mpap.pdf">pdf</a>]<br>
-          <strong><span class="text-danger">Best demo award</span></strong>
         </div>
       </div>
     </div>
 
-      <!-- 
-          <div class="list-group-item">
-            <ul class="pub">
-              <li>Accelerating the Mobile Web with Selective Offloading</li>
-              <li>Xiao Sophia Wang, <strong>Haichen Shen</strong>, David Wetherall</li>
-              <li>SIGCOMM Workshop MCC, Aug. 2013 [<a href="papers/mcc13_final.pdf">PDF</a>]</li>
-            </ul>
-          </div>
-          <div class="list-group-item">
-            <ul class="pub">
-              <li>Using Taint Tracking to Improve Energy Efficiency of Always-on Smartphone Apps</li>
-              <li><strong>Haichen Shen</strong>, Aruna Balasubramanian, Anthony LaMarca, David Wetherall</li>
-              <li>NSDI, Apr. 2013 <span class="label label-info">Poster</span> [<a href="papers/nsdi13_proposal.pdf">PDF</a>] [<a href="posters/nsdi13_poster.pdf">Poster</a>] </li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="row">
-        <div class="col-md-10">
-          <h3>Teaching Experience</h3>
-          <ul>
-            <li><a href="http://courses.cs.washington.edu/courses/csep552/16wi/">CSEP 552</a>: Distributed Systems, Winter 2016.</li>
-            <li><a href="https://courses.cs.washington.edu/courses/csep561/13au/">CSEP 561</a>: Network Systems, Fall 2013.</li>
-          </ul>
-        </div>
-      </div>
-      <br>
-      <small>Last update: July 2016</small>
-    </div>
+    <!-- 
+         <div class="list-group-item">
+           <ul class="pub">
+             <li>Accelerating the Mobile Web with Selective Offloading</li>
+             <li>Xiao Sophia Wang, <strong>Haichen Shen</strong>, David Wetherall</li>
+             <li>SIGCOMM Workshop MCC, Aug. 2013 [<a href="papers/mcc13_final.pdf">PDF</a>]</li>
+           </ul>
+         </div>
+         <div class="list-group-item">
+           <ul class="pub">
+             <li>Using Taint Tracking to Improve Energy Efficiency of Always-on Smartphone Apps</li>
+             <li><strong>Haichen Shen</strong>, Aruna Balasubramanian, Anthony LaMarca, David Wetherall</li>
+             <li>NSDI, Apr. 2013 <span class="label label-info">Poster</span> [<a href="papers/nsdi13_proposal.pdf">PDF</a>] [<a href="posters/nsdi13_poster.pdf">Poster</a>] </li>
+           </ul>
+         </div>
+         <div class="paper">
+           <div class="pubtitle">MPAP: virtualization architecture for heterogenous wireless APs</div>
+           <div class="author">Yong He, Ji Fang, Jiansong Zhang, <strong>Haichen Shen</strong>, Kun Tan, and Yongguang Zhang</div>
+           SIGCOMM, Aug. 2010 [<a href="papers/mpap.pdf">pdf</a>]<br>
+           <strong><span class="text-danger">Best demo award</span></strong>
+         </div>
   </div>
-  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  </div> -->
+
+    <div class="row">
+      <div class="col-md-10">
+        <h3>Teaching Experience</h3>
+        <ul>
+          <li>Instructor for <a href="http://dlsys.cs.washington.edu/">CSE 599G1</a>: Deep Learning System, Spring 2017.</li>
+          <li>TA for <a href="http://courses.cs.washington.edu/courses/csep552/16wi/">CSEP 552</a>: Distributed Systems, Winter 2016.</li>
+          <li>TA for <a href="https://courses.cs.washington.edu/courses/csep561/13au/">CSEP 561</a>: Network Systems, Fall 2013.</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <small>Last update: July 2017</small>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/classie.js"></script>
   <script src="js/header.js"></script>
 </body>

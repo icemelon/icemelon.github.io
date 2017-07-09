@@ -1,7 +1,16 @@
 body {
 	/*background: #F8F8F8;*/
 	padding-left: 30px;
-	font:15px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 16px/1.5 "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+a {
+    font-weight: 400;
+}
+
+span.highlight {
+    font-weight: 400;
 }
 
 header {
@@ -30,7 +39,9 @@ header {
 }
 
 h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Pacifico', cursive;
+    /*'Gentium Basic', "Abril Fatface", cursive;
+    font-weight: 700;*/
 	margin-top: 15px;
 }
 
@@ -71,16 +82,15 @@ header.small #social {
 }
 
 h1 span {
-	font-family: STKaiti;
+	font-family: STKaiTi, "Microsoft Yahei", STXihei, sans-serif;
 	font-weight: normal;
 	font-size: 0.8em;
 	color: #888888;
 }
 
 h3 {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
-
 
 .icon {
 	height: 28px;
@@ -97,30 +107,53 @@ ul.project li {
 }
 
 .pubtitle {
-	font-size: 17px;
-    margin-bottom: 5px;
+    font-weight: 500;
+	/*font-size: 17px;*/
+    /*margin-bottom: 5px;*/
 }
 
 .author {
-	font-style: italic;
-    margin-bottom: 2px;
+	/*font-style: italic;
+    margin-bottom: 2px;*/
 }
 
-.bs-callout {
-    padding: 10px 20px 10px 20px;
-    margin: 10px 0;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 5px;
+.conf {
+    font-size: 15px;
 }
+
+.abstract{
+	font-family: "Gill Sans", sans-serif;
+    display:none;
+}
+
+.paper {
+    padding: 10px 20px 10px 20px;
+    /*margin: 10px 0;*/
+    border-top: 1px solid #ccc;
+    /*border-left-width: 5px;*/
+    /*border-radius: 5px;*/
+}
+
+.publications > :first-child {
+    border-top: 0px;
+}
+
+.bs-callout #first {
+    padding: 10px 20px 10px 20px;
+    /*margin: 10px 0;*/
+    /*border-top: 1px solid #ccc;*/
+    border-left-width: 5px;
+    /*border-radius: 5px;*/
+}
+
 
 .bs-callout-info {
-    border-left-color: #1b809e !important;
+    /*border-left-color: #1b809e !important;*/
 }
 
-.bs-callout-info:hover {
-	background-color: #eef5f7 !important;
-}
+/*.bs-callout-info:hover {
+	background-color: #f6fafb !important;
+}*/
 
 @media (max-width: 640px) {
 	body {
@@ -134,11 +167,11 @@ ul.project li {
 	}
 
     header div {
-        font-size: 12px;
+        font-size: 15px;
+        line-height: 18px;
     }
 
 	h1 {
-		font-family: 'Open Sans', sans-serif;
 		font-size: 20px;
 		margin: 0px 0 5px 0;
 	}
@@ -154,11 +187,11 @@ ul.project li {
     }
 
     #social {
-        margin-top: 3px;
+        margin-top: 5px;
     }
 
 	.icon {
-		height: 20px;
+		height: 15px;
 		margin-right: 5px;
 	}
 
