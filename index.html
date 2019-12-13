@@ -1,322 +1,438 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Haichen Shen">
-  <meta name="description" content="Haichen's homepage">
-  <title>Haichen Shen's Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="theme.css" rel="stylesheet">
+  <title>Haichen Shen's Home Page</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  <![endif]-->
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-39033025-2', 'auto');
     ga('send', 'pageview');
   </script>
 </head>
 
-<body>
-  <div class="container-fluid">
-  <header>
-    <div class="row">
-      <div class="col-header">
-        <img src="img/haichen.jpg" alt="Haichen Shen" id="avatar"/>
-      </div>
-      <div class="col-header">
-        <h1>Haichen Shen <span>(沈海晨)</span></h1>
-        <div id="status">
-          <span class="text-success highlight">Ph.D candidate</span> @ <a href="http://syslab.cs.washington.edu">System Lab</a>,
-          <a href="http://www.cs.washington.edu">CSE</a>,
-          <a href="http://www.washington.edu">UW</a>
-        </div>
-        <div id="email">
-          <span class="text-success">haichen at cs.washington.edu</span><br>
-        </div>
-        <div id="address">
-          CSE 391, Paul G. Allen Center<br>
-          <!-- 185 Stevens Way, AC101, Box 352350, Seattle, WA 98195 -->
-        </div>
-        <div id="social">
-          <a href="https://www.facebook.com/shenhaichen"><img src="icon/facebook.png" class="icon"></a>
-          <a href="https://twitter.com/shenhaichen"><img src="icon/twitter.png" class="icon"></a>
-          <a href="https://www.linkedin.com/in/haichenshen"><img src="icon/linkedin.png" class="icon"></a>
-        </div>
-      </div>
+<body id="page-top">
 
-    </div>
-  </header>
-
-  <div id="main">
-    <div class="row">
-      <div class="col-md-10">
-        <p>
-          I'm a sixth year Ph.D. student in Computer Science at University of
-          Washington, working
-          with <a href="http://www.cs.washington.edu/people/faculty/arvind">Prof. Arvind
-          Krishnamurthy</a>
-          and <a href="https://www.microsoft.com/en-us/research/people/matthaip/">Dr. Matthai
-          Philipose</a>. I'm generally interest at deep learning system, distributed system, mobile system, and computer networks. Previously I worked
-          with <a href="http://djw.cs.washington.edu/">Prof. David Wetherall</a>
-          and <a href="http://www3.cs.stonybrook.edu/~arunab/">Prof. Aruna
-          Balasumbramanian</a>.  I received my bachelor degree
-          in <a href="http://itcs.tsinghua.edu.cn/en/"> Institute for
-          Theoretical Computer Science</a> (supervised
-          by <a href="http://iiis.tsinghua.edu.cn/yao/">Prof. Andrew Yao</a>) at
-          Tsinghua University.
-          <!--I also interned at Microsoft Research (2014) and Microsof Research Asia (2010-2012). -->
-        </p>
-        <p id="news">
-          I'll join <a href="https://aws.amazon.com/machine-learning/">AWS AI</a> team at Amazon this fall.
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10">
-        <h3>Research Projects</h3>
-        <ul class="project">
-          <li><span class="text-info highlight">Nexus</span>: is a serving system for neural network inferences on GPU clusters. Nexus analyzes and schedules the DNN models at the level of linear algebra operations, which motivates several new ways to batch these operations and a batching-aware cluster resource allocation and scheduling framework to improve GPU utilization.
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Haichen's Homepage</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
           </li>
-          <li><a href="http://tvmlang.org/">TVM</a>: aims to bridge the gap between deep learning systems, which are optimized for productivity, and the multitude of programming, performance and efficiency constraints enforced by different types of hardware. TVM provides a common representation for deep learning computation workloads, and enables optimizations for CPUs, GPUs and other specialized hardware such as FPGAs.
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#publication">Publication</a>
           </li>
-          <li><a href="http://syslab.cs.washington.edu/research/specialization">
-            Sequential Model Specialization</a>: aims to accelerate the speed of
-            recognizing entities such as objects, people, scenes and activities
-            in every frame of video footage of day-to-day life, by exploiting
-            "specialized" convolutional neural networks (CNNs) under highly
-            skewed distribution. When applied to recognizing faces in TV shows
-            and movies we realized end-to-end classification speedups of
-            2.4-7.8x/2.6-11.2x (on GPU/CPU) relative to a state-of-the-art
-            convolutional neural network, at competitive accuracy.
-          </li>
-          <li><span class="text-info highlight">MCDNN</span>: an
-          approximation-based execution framework for applying computer vision
-          to video on cloud-backed mobile devices using Deep Neural
-          Networks(DNNs). The computational demands of DNNs are high enough
-          that, without careful resource management, such applications strain
-          device battery, and cloud cost budgets. MCDNN allows each request to
-          be served approximately, by systematically trading off DNN
-          classification accuracy for resource use.
-          </li>
-          <li><a href="http://uwnetworkslab.github.io/metasync/">Metasync</a>: a
-          secure and reliable file synchronization service that uses multiple
-          cloud synchronization services as untrusted storage providers. We
-          devised a novel variant of Paxos that provides efficient and
-          consistent updates on top of the unmodified APIs exported by existing
-          services.
-          </li>
-          <li><a href="http://mobilehub.cs.washington.edu">Mobile Hub</a>:
-          leverages heterogeneous hardware, such as sensor hubs, to improve the
-          power efficiency of <i>always-on</i> sensing applications on mobile
-          phones. MobileHub rewrites the binary of a given application without
-          programmer effort to make it more power efficient.
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-10">
-        <h3>Publications</h3>
-        <div class="publications">
-        <div class="paper">
-          <div class="pubtitle">Fast Video Classification via Adaptive Cascading of Deep Models</div>
-          <div class="author">Haichen Shen, Seungyeop Han, Matthai Philipose, Arvind Krishnamurthy</div>
-          <div class="conf"> CVPR, July 2017 <span class="highlight">(spotlight)</span> </div>
-          <span class="links btn-group">
-            <a class="btn btn-default btn-xs dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_specialization').slideToggle('fast');return false;">
-              <i class="fa fa-chevron-down"></i> abstract
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/specialization.pdf">
-              <i class="fa fa-file-pdf-o"></i> paper
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/specialization.bib">
-              <i class="fa fa-file-o"></i> bibtex
-            </a>
-            <a class="btn btn-default btn-xs" href="slides/specialization_cvpr.pdf">
-              <i class="fa fa-file-pdf-o"></i> slides
-            </a>
-            <a class="btn btn-default btn-xs" href="https://www.youtube.com/watch?v=Fg40LYLp_uc">
-              <i class="fa fa-film"></i> talk
-            </a>
-            <a class="btn btn-default btn-xs" href="http://syslab.cs.washington.edu/research/specialization">
-              <i class="fa fa-external-link"></i> Project
-            </a>
-          </span>
-          <div id="abstract_specialization" class="abstract well">
-            Recent advances have enabled “oracle” classifiers that can classify
-            across many classes and input distributions with high accuracy
-            without retraining. However, these classifiers are relatively
-            heavyweight, so that applying them to classify video is costly. We
-            show that day-to-day video exhibits highly skewed class
-            distributions over the short term, and that these distributions can
-            be classified by much simpler models. We formulate the problem of
-            detecting the short-term skews online and exploiting models based on
-            it as a new sequential decision making problem dubbed the Online
-            Bandit Problem, and present a new algorithm to solve it. When
-            applied to recognizing faces in TV shows and movies, we realize
-            end-toend classification speedups of 2.4-7.8×/2.6-11.2× (on GPU/CPU)
-            relative to a state-of-the-art convolutional neural network, at
-            competitive accuracy.
-          </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-dark">
+    <div class="container"> <!-- align-items-center flex-row"> -->
+      <div class="row">
+        <div class="col-md-0 col-lg-2">
         </div>
-        <div class="paper">
-          <div class="pubtitle">MCDNN: An Approximation-Based Execution Framework for Deep Stream Processing Under Resource Constraints</div>
-          <div class="author">Seungyeop Han*, Haichen Shen*, Matthai Philipose, Sharad Agarwal, Alec Wolman, Arvind Krishnamurthy</div>
-          <div class="conf"> MobiSys, Jun. 2016 (*equally contributed) </div>
-          <span class="links btn-group">
-            <a class="btn btn-default btn-xs dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_mcdnn').slideToggle('fast');return false;">
-              <i class="fa fa-chevron-down"></i> abstract
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/mcdnn.pdf">
-              <i class="fa fa-file-pdf-o"></i> paper
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/mcdnn.bib">
-              <i class="fa fa-file-o"></i> bibtex
-            </a>
-            <a class="btn btn-default btn-xs" href="slides/mcdnn_mobisys.pdf">
-              <i class="fa fa-file-pdf-o"></i> slides
-            </a>
-            <a class="btn btn-default btn-xs" href="https://www.youtube.com/watch?v=DJCO1mmDlno">
-              <i class="fa fa-film"></i> 1-min video
-            </a>
-            <a class="btn btn-default btn-xs" href="https://www.youtube.com/watch?v=gL8xdM6NCug&index=2&list=PL6jLuiS6wP5ZS2zV1ofDomdczF53Evm35">
-              <i class="fa fa-film"></i> talk
-            </a>
-          </span>
-          <div id="abstract_mcdnn" class="abstract well">
-            We consider applying computer vision to video on cloud-backed mobile
-            devices using Deep Neural Networks (DNNs). The computational demands
-            of DNNs are high enough that, without careful resource management,
-            such applications strain device battery, wireless data, and cloud
-            cost budgets. We pose the corresponding resource management problem,
-            which we call Approximate Model Scheduling, as one of serving a
-            stream of heterogeneous (i.e., solving multiple classification
-            problems) requests under resource constraints. We present the design
-            and implementation of an optimizing compiler and runtime scheduler
-            to address this problem. Going beyond traditional resource
-            allocators, we allow each request to be served approximately, by
-            systematically trading off DNN classification accuracy for resource
-            use, and remotely, by reasoning about on-device/cloud execution
-            trade-offs. To inform the resource allocator, we characterize how
-            several common DNNs, when subjected to state-of-the art
-            optimizations, trade off accuracy for resource use such as memory,
-            computation, and energy. The heterogeneous streaming setting is a
-            novel one for DNN execution, and we introduce two new and powerful
-            DNN optimizations that exploit it. Using the challenging continuous
-            mobile vision domain as a case study, we show that our techniques
-            yield significant reductions in resource usage and perform
-            effectively over a broad range of operating conditions.
-          </div>
+        <div class="col-md-4 col-lg-3 text-center">
+          <!-- Masthead Avatar Image -->
+          <img class="masthead-avatar avatar" src="img/haichen.jpg" alt="">
         </div>
-        <div class="paper">
-          <div class="pubtitle">Enhancing Mobile Apps To Use Sensor Hubs Without Programmer Effort</div>
-          <div class="author">Haichen Shen, Aruna Balasubramanian, Anthony LaMarca, David Wetherall</div>
-          <div class="conf">Ubicomp, Sept. 2015 <span class="text-success highlight">(Best paper award, Gaetano Borriello best student paper award)</span> </div>
-          <span class="links btn-group">
-            <a class="btn btn-default btn-xs dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_mobilehub').slideToggle('fast');return false;">
-              <i class="fa fa-chevron-down"></i> abstract
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/mobilehub.pdf">
-              <i class="fa fa-file-pdf-o"></i> paper
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/mobilehub.bib">
-              <i class="fa fa-file-o"></i> bibtex
-            </a>
-            <a class="btn btn-default btn-xs" href="slides/mobilehub_ubicomp.pdf">
-              <i class="fa fa-file-pdf-o"></i> slides
-            </a>
-            <a class="btn btn-default btn-xs" href="http://mobilehub.cs.washington.edu/">
-              <i class="fa fa-external-link"></i> project
-            </a>
-         </span>
-         <div id="abstract_mobilehub" class="abstract well">
-           Always-on continuous sensing apps drain the battery quickly because
-           they prevent the main processor from sleeping. Instead, sensor hub
-           hardware, available in many smartphones today, can run continuous
-           sensing at lower power while keeping the main processor
-           idle. However, developers have to divide functionality between the
-           main processor and the sensor hub. We implement MobileHub, a system
-           that automatically rewrites applications to leverage the sensor hub
-           without additional programming effort. MobileHub uses a combination
-           of dynamic taint tracking and machine learning to learn when it is
-           safe to leverage the sensor hub without affecting application
-           semantics. We implement MobileHub in Android and prototype a sensor
-           hub on a 8-bit AVR micro-controller. We experiment with 20
-           applications from Google Play. Our evaluation shows that MobileHub
-           significantly reduces power consumption for continuous sensing apps.
-         </div>
+        <div class="col-md-7 col-lg-6 mt-2">
+          <!-- Masthead Heading -->
+          <h1 class="masthead-heading text-uppercase mb-3">Haichen Shen</h1>
+          <p class="masthead-subheading font-weight-light h3">
+            Applied Scientist<br>
+            AWS AI, Amazon<br>
+            2100 University Ave, East Palo Alto, CA<br>
+            shaichen at amazon dot com
+          </p>
         </div>
-        <div class="paper">
-          <div class="pubtitle">MetaSync: File Synchronization Across Multiple Untrusted Storage Services</div>
-          <div class="author">Seungyeop Han, Haichen Shen, Taesoo Kim, Arvind Krishnamurthy, Thomas Anderson, David Wetherall</div>
-          <div class="conf">USENIX ATC, July 2015</div>
-          <span class="links btn-group">
-            <a class="btn btn-default btn-xs dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_metasync').slideToggle('fast');return false;">
-              <i class="fa fa-chevron-down"></i> abstract
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/metasync.pdf">
-              <i class="fa fa-file-pdf-o"></i> paper
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/metasync.bib">
-              <i class="fa fa-file-o"></i> bibtex
-            </a>
-            <a class="btn btn-default btn-xs" href="http://uwnetworkslab.github.io/metasync/">
-              <i class="fa fa-external-link"></i> project
-            </a>
-          </span>
-          <div id="abstract_metasync" class="abstract well">
-            <p> Cloud-based file synchronization services, such as Dropbox, are
-            a worldwide resource for many millions of users.  However,
-            individual services often have tight resource limits, suffer from
-            temporary outages or even shutdowns, and sometimes silently corrupt
-            or leak user data. </p>
-            <p> We design, implement, and evaluate MetaSync, a secure and
-            reliable file synchronization service that uses multiple cloud
-            synchronization services as untrusted storage providers. To make
-            MetaSync work correctly, we devise a novel variant of Paxos that
-            provides efficient and consistent updates on top of the unmodified
-            APIs exported by existing services. Our system automatically
-            redistributes files upon reconfiguration of providers. </p>
-            <p> Our evaluation shows that MetaSync provides low update latency
-            and high update throughput while being more trustworthy and
-            available. MetaSync outperforms its underlying cloud services by
-            1.2-10× on three realistic workloads. </p>
-          </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase mb-5">About</h2>
+
+      <!-- Icon Divider -->
+      <!-- <div class="divider-custom divider-light"> -->
+      <!--   <div class="divider-custom-line"></div> -->
+      <!--   <div class="divider-custom-icon"> -->
+      <!--     <i class="fas fa-star"></i> -->
+      <!--   </div> -->
+      <!--   <div class="divider-custom-line"></div> -->
+      <!-- </div> -->
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-9 m-auto">
+          <p class="lead">
+          I'm an applied scientist at <a href="https://aws.amazon.com/machine-learning/">AWS AI</a> team at Amazon.
+          I received my Ph.D. in computer science from
+          <a href="https://www.cs.washington.edu/">University of Washington</a>, advised by
+          Professor <a href="http://www.cs.washington.edu/people/faculty/arvind">Arvind Krishnamurthy</a>
+          and <a href="https://www.microsoft.com/en-us/research/people/matthaip/">Matthai Philipose</a>.
+          I'm generally interest at deep learning compiler and system, distributed system, and mobile system.
+          Previously I also collaborated with
+          <a href="https://ai.google/research/people/105021">David Wetherall</a>
+          and <a href="http://www3.cs.stonybrook.edu/~arunab/">Aruna
+          Balasumbramanian</a>. I received my bachelor degree in computer science from
+          <a href="https://iiis.tsinghua.edu.cn/en/"> Institute for
+          Theoretical Computer Science</a> (supervised
+          by Professor <a href="http://iiis.tsinghua.edu.cn/yao/">Andrew Yao</a>) at
+          Tsinghua University.
+          </p>
         </div>
-        <div class="paper">
-          <div class="pubtitle">Enable Flexible Spectrum Access with Spectrum Virtualization</div>
-          <div class="author">Kun Tan, Haichen Shen, Jiansong Zhang, Yongguang Zhang</div>
-          <div class="conf">DySPAN, Oct. 2012</div>
-          <span class="links btn-group">
-            <a class="btn btn-default btn-xs dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_virtual_spectrum').slideToggle('fast');return false;">
-              <i class="fa fa-chevron-down"></i> abstract
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/virtual_spectrum.pdf">
-              <i class="fa fa-file-pdf-o"></i> paper
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/virtual_spectrum.bib">
-              <i class="fa fa-file-o"></i> bibtex
-            </a>
-          </span>
-          <div id="abstract_virtual_spectrum" class="abstract well">
-            <p>Enabling flexible spectrum access (FSA) in existing wireless
+        <!-- <div class="col-lg-4 ml-auto"> -->
+        <!--   <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p> -->
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 mr-auto"> -->
+        <!--   <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p> -->
+        <!-- </div> -->
+      </div>
+
+      <!-- About Section Button -->
+      <!-- <div class="text-center mt-4"> -->
+      <!--   <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/"> -->
+      <!--     <i class="fas fa-download mr-2"></i> -->
+      <!--     Free Download! -->
+      <!--   </a> -->
+      <!-- </div> -->
+
+    </div>
+  </section>
+
+  <section class="page-section bg-primary text-dark mb-0" id="publication">
+    <div class="container">
+      <h2 class="page-section-heading text-center text-uppercase mb-5">Publication</h2>
+      <div class="col-lg-9 m-auto">
+        <ul class="paper">
+          <li class="pubtitle">Nexus: a GPU cluster engine for accelerating DNN-based video analysis</li>
+          <li class="author"><strong>Haichen Shen</strong>, Lequn Chen, Yuchen Jin, Liangyu Zhao, Bingyu Kong, Matthai Philipose, Arvind Krishnamurthy, Ravi Sundaram</li>
+          <li class="conf">SOSP, Oct 2019</li>
+          <li>
+            <span class="links btn-group">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_nexus').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/nexus.pdf">
+                <i class="fa fa-file-pdf"></i> paper
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/nexus.bib">
+                <i class="fa fa-file"></i> bibtex
+              </a>
+              <a class="btn btn-sm btn-secondary" href="slides/nexus_sosp.pdf">
+                <i class="fa fa-file-pdf"></i> slides
+              </a>
+              <a class="btn btn-sm btn-secondary" href="https://sosp19.rcs.uwaterloo.ca/videos/D2-S2-P3.mp4">
+                <i class="fa fa-film"></i> talk
+              </a>
+              <a class="btn btn-sm btn-secondary" href="https://github.com/uwsampl/nexus">
+                <i class="fa fa-code"></i> code
+              </a>
+            </span>
+            <div id="abstract_nexus" class="abstract">
+              We address the problem of serving Deep Neural Networks (DNNs)
+              efficiently from a cluster of GPUs. In order to realize the
+              promise of very low-cost processing made by accelerators such as
+              GPUs, it is essential to run them at sustained high
+              utilization. Doing so requires cluster-scale resource management
+              that performs detailed scheduling of GPUs, reasoning about groups
+              of DNN invocations that need to be coscheduled, and moving from
+              the conventional whole-DNN execution model to executing fragments
+              of DNNs. Nexus is a fully implemented system that includes these
+              innovations.  In large-scale case studies on 16 GPUs, when
+              required to stay within latency constraints at least 99% of the
+              time, Nexus can process requests at rates 1.8-12.7× higher than
+              state of the art systems can. A long-running multi-application
+              deployment stays within 84% of optimal utilization and, on a
+              100-GPU cluster, violates latency SLOs on 0.27% of requests.
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="paper">
+          <li class="pubtitle">TVM: An automated end-to-end optimizing compiler for deep learning<li>
+          <li class="author">Tianqi Chen, Thierry Moreau, Ziheng Jiang, Lianmin Zheng, Eddie Yan, <strong>Haichen Shen</strong>, Meghan Cowan, Leyuan Wang, Yuwei Hu, Luis Ceze, Carlos Guestrin, Arvind Krishnamurthy</li>
+          <li class="conf">OSDI, Sept 2018</li>
+          <li>
+            <span class="links btn-group">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_tvm').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/tvm.pdf">
+                <i class="fa fa-file-pdf"></i> paper
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/tvm.bib">
+                <i class="fa fa-file"></i> bibtex
+              </a>
+              <a class="btn btn-sm btn-secondary" href="https://tvm.ai/">
+                <i class="fa fa-link"></i> project
+              </a>
+              <a class="btn btn-sm btn-secondary" href="https://github.com/apache/incubator-tvm">
+                <i class="fa fa-code"></i> code
+              </a>
+            </span>
+            <div id="abstract_tvm" class="abstract">
+              There is an increasing need to bring machine learning to a wide
+              diversity of hardware devices. Current frameworks rely on
+              vendor-specific operator libraries and optimize for a narrow range
+              of server-class GPUs. Deploying workloads to new platforms - such
+              as mobile phones, embedded devices, and accelerators (e.g., FPGAs,
+              ASICs) - requires significant manual effort. We propose TVM, a
+              compiler that exposes graph-level and operator-level optimizations
+              to provide performance portability to deep learning workloads
+              across diverse hardware back-ends. TVM solves optimization
+              challenges specific to deep learning, such as high-level operator
+              fusion, mapping to arbitrary hardware primitives, and memory
+              latency hiding. It also automates optimization of low-level
+              programs to hardware characteristics by employing a novel,
+              learning-based cost modeling method for rapid exploration of code
+              optimizations. Experimental results show that TVM delivers
+              performance across hardware back-ends that are competitive with
+              state-of-the-art, hand-tuned libraries for low-power CPU, mobile
+              GPU, and server-class GPUs. We also demonstrate TVM's ability to
+              target new accelerator back-ends, such as the FPGA-based generic
+              deep learning accelerator. The system is open sourced and in
+              production use inside several major companies.
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="paper">
+          <li class="pubtitle">Fast Video Classification via Adaptive Cascading of Deep Models</li>
+          <li class="author"><strong>Haichen Shen</strong>, Seungyeop Han, Matthai Philipose, Arvind Krishnamurthy</li>
+          <li class="conf">CVPR, July 2017 (spotlight)</li>
+          <li>
+            <span class="links btn-group">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_specialization').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/specialization.pdf">
+                <i class="fa fa-file-pdf"></i> paper
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/specialization.bib">
+                <i class="fa fa-file"></i> bibtex
+              </a>
+              <a class="btn btn-sm btn-secondary" href="slides/specialization_cvpr.pdf">
+                <i class="fa fa-file-pdf"></i> slides
+              </a>
+              <a class="btn btn-sm btn-secondary" href="https://www.youtube.com/watch?v=Fg40LYLp_uc">
+                <i class="fa fa-film"></i> talk
+              </a>
+              <a class="btn btn-sm btn-secondary" href="http://syslab.cs.washington.edu/research/specialization">
+                <i class="fa fa-link"></i> project
+              </a>
+              <a class="btn btn-sm btn-secondary" href="https://github.com/icemelon9/specialization">
+                <i class="fa fa-code"></i> code
+              </a>
+            </span>
+            <div id="abstract_specialization" class="abstract">
+              Recent advances have enabled “oracle” classifiers that can
+              classify across many classes and input distributions with high
+              accuracy without retraining. However, these classifiers are
+              relatively heavyweight, so that applying them to classify video is
+              costly. We show that day-to-day video exhibits highly skewed class
+              distributions over the short term, and that these distributions
+              can be classified by much simpler models. We formulate the problem
+              of detecting the short-term skews online and exploiting models
+              based on it as a new sequential decision making problem dubbed the
+              Online Bandit Problem, and present a new algorithm to solve
+              it. When applied to recognizing faces in TV shows and movies, we
+              realize end-toend classification speedups of 2.4-7.8×/2.6-11.2×
+              (on GPU/CPU) relative to a state-of-the-art convolutional neural
+              network, at competitive accuracy.
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="paper">
+          <li class="pubtitle">MCDNN: An Approximation-Based Execution Framework for Deep Stream Processing Under Resource Constraints</li>
+          <li class="author">Seungyeop Han*, <strong>Haichen Shen*</strong>, Matthai Philipose, Sharad Agarwal, Alec Wolman, Arvind Krishnamurthy</li>
+          <li class="conf"> MobiSys, Jun. 2016 (*equally contributed) </li>
+          <li>
+            <span class="links btn-group">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_mcdnn').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/mcdnn.pdf">
+                <i class="fa fa-file-pdf"></i> paper
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/mcdnn.bib">
+                <i class="fa fa-file"></i> bibtex
+              </a>
+              <a class="btn btn-sm btn-secondary" href="slides/mcdnn_mobisys.pdf">
+                <i class="fa fa-file-pdf"></i> slides
+              </a>
+              <a class="btn btn-sm btn-secondary" href="https://www.youtube.com/watch?v=gL8xdM6NCug&index=2&list=PL6jLuiS6wP5ZS2zV1ofDomdczF53Evm35">
+                <i class="fa fa-film"></i> talk
+              </a>
+              <a class="btn btn-sm btn-secondary" href="https://www.youtube.com/watch?v=DJCO1mmDlno">
+                <i class="fa fa-film"></i> 1-min video
+              </a>
+            </span>
+            <div id="abstract_mcdnn" class="abstract">
+              We consider applying computer vision to video on cloud-backed
+              mobile devices using Deep Neural Networks (DNNs). The
+              computational demands of DNNs are high enough that, without
+              careful resource management, such applications strain device
+              battery, wireless data, and cloud cost budgets. We pose the
+              corresponding resource management problem, which we call
+              Approximate Model Scheduling, as one of serving a stream of
+              heterogeneous (i.e., solving multiple classification problems)
+              requests under resource constraints. We present the design and
+              implementation of an optimizing compiler and runtime scheduler to
+              address this problem. Going beyond traditional resource
+              allocators, we allow each request to be served approximately, by
+              systematically trading off DNN classification accuracy for
+              resource use, and remotely, by reasoning about on-device/cloud
+              execution trade-offs. To inform the resource allocator, we
+              characterize how several common DNNs, when subjected to
+              state-of-the art optimizations, trade off accuracy for resource
+              use such as memory, computation, and energy. The heterogeneous
+              streaming setting is a novel one for DNN execution, and we
+              introduce two new and powerful DNN optimizations that exploit
+              it. Using the challenging continuous mobile vision domain as a
+              case study, we show that our techniques yield significant
+              reductions in resource usage and perform effectively over a broad
+              range of operating conditions.
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="paper">
+          <li class="pubtitle">Enhancing Mobile Apps To Use Sensor Hubs Without Programmer Effort</li>
+          <li class="author"><strong>Haichen Shen</strong>, Aruna Balasubramanian, Anthony LaMarca, David Wetherall</li>
+          <li class="conf">Ubicomp, Sept. 2015 <strong>(Best paper award, Gaetano Borriello best student paper award)</strong> </li>
+          <li>
+            <span class="links btn-group">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_mobilehub').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/mobilehub.pdf">
+                <i class="fa fa-file-pdf"></i> paper
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/mobilehub.bib">
+                <i class="fa fa-file"></i> bibtex
+              </a>
+              <a class="btn btn-sm btn-secondary" href="slides/mobilehub_ubicomp.pdf">
+                <i class="fa fa-file-pdf"></i> slides
+              </a>
+              <a class="btn btn-sm btn-secondary" href="http://mobilehub.cs.washington.edu/">
+                <i class="fa fa-link"></i> project
+              </a>
+            </span>
+            <div id="abstract_mobilehub" class="abstract">
+              Always-on continuous sensing apps drain the battery quickly because
+              they prevent the main processor from sleeping. Instead, sensor hub
+              hardware, available in many smartphones today, can run continuous
+              sensing at lower power while keeping the main processor
+              idle. However, developers have to divide functionality between the
+              main processor and the sensor hub. We implement MobileHub, a system
+              that automatically rewrites applications to leverage the sensor hub
+              without additional programming effort. MobileHub uses a combination
+              of dynamic taint tracking and machine learning to learn when it is
+              safe to leverage the sensor hub without affecting application
+              semantics. We implement MobileHub in Android and prototype a sensor
+              hub on a 8-bit AVR micro-controller. We experiment with 20
+              applications from Google Play. Our evaluation shows that MobileHub
+              significantly reduces power consumption for continuous sensing apps.
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="paper">
+          <li class="pubtitle">MetaSync: File Synchronization Across Multiple Untrusted Storage Services</li>
+          <li class="author">Seungyeop Han, <strong>Haichen Shen</strong>, Taesoo Kim, Arvind Krishnamurthy, Thomas Anderson, David Wetherall</li>
+          <li class="conf">USENIX ATC, July 2015</li>
+          <li>
+            <span class="links btn-group">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_metasync').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/metasync.pdf">
+                <i class="fa fa-file-pdf"></i> paper
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/metasync.bib">
+                <i class="fa fa-file"></i> bibtex
+              </a>
+              <a class="btn btn-sm btn-secondary" href="http://uwnetworkslab.github.io/metasync/">
+                <i class="fa fa-link"></i> project
+              </a>
+            </span>
+            <div id="abstract_metasync" class="abstract well">
+              Cloud-based file synchronization services, such as Dropbox, are a
+              worldwide resource for many millions of users.  However,
+              individual services often have tight resource limits, suffer from
+              temporary outages or even shutdowns, and sometimes silently
+              corrupt or leak user data. <br>
+
+              We design, implement, and evaluate MetaSync, a secure and reliable
+              file synchronization service that uses multiple cloud
+              synchronization services as untrusted storage providers. To make
+              MetaSync work correctly, we devise a novel variant of Paxos that
+              provides efficient and consistent updates on top of the unmodified
+              APIs exported by existing services. Our system automatically
+              redistributes files upon reconfiguration of providers. <br>
+              
+              Our evaluation shows that MetaSync provides low update latency and
+              high update throughput while being more trustworthy and
+              available. MetaSync outperforms its underlying cloud services by
+              1.2-10× on three realistic workloads.
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="paper">
+          <li class="pubtitle">Enable Flexible Spectrum Access with Spectrum Virtualization</li>
+          <li class="author">Kun Tan, <strong>Haichen Shen</strong>, Jiansong Zhang, Yongguang Zhang</li>
+          <li class="conf">DySPAN, Oct. 2012</li>
+          <li>
+            <span class="links btn-group">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_virtual_spectrum').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/virtual_spectrum.pdf">
+                <i class="fa fa-file-pdf"></i> paper
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/virtual_spectrum.bib">
+                <i class="fa fa-file"></i> bibtex
+              </a>
+            </span>
+            <div id="abstract_virtual_spectrum" class="abstract">
+              Enabling flexible spectrum access (FSA) in existing wireless
               networks is challenging due to the limited spectrum
               programmability – the ability to change spectrum properties of a
               signal to match an arbitrary frequency allocation. This paper
@@ -325,9 +441,10 @@
               support flexible spectrum programmability by inserting a new
               spectrum virtualization layer (SVL) directly below traditional
               wireless PHY, and enable FSA for wireless networks without
-              changing their PHY designs.</p>
-            <p>SVL provides a virtual baseband abstraction to wireless PHY,
-              which is static, contiguous, with a desirable width defined by the
+              changing their PHY designs.<br>
+              
+              SVL provides a virtual baseband abstraction to wireless PHY, which
+              is static, contiguous, with a desirable width defined by the
               PHY. At the sender side, SVL reshapes the modulated baseband
               signals into waveform that matches the dynamically allocated
               physical frequency bands – which can be of different width, or
@@ -340,92 +457,147 @@
               implemented a prototype of SVL on a software radio platform, and
               tested it with various wireless PHYs. Our experiments show SVL is
               flexible and effective to support FSA in existing wireless
-              networks.</p>
-          </div>
-        </div>
-        <div class="paper">
-          <div class="pubtitle">Frame Retransmissions Considered Harmful: Improving Spectrum Efficiency Using Micro-ACKs</div>
-          <div class="author">Jiansong Zhang, Haichen Shen, Kun Tan, Ranveer Chandra, Yongguang Zhang, Qian Zhang</div>
-          <div class="conf">MobiCom, Aug. 2012</div>
-          <span class="links btn-group">
-            <a class="btn btn-default btn-xs dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_uack').slideToggle('fast');return false;">
-              <i class="fa fa-chevron-down"></i> abstract</a>
-            <a class="btn btn-default btn-xs" href="papers/uack.pdf">
-              <i class="fa fa-file-pdf-o"></i> paper
-            </a>
-            <a class="btn btn-default btn-xs" href="papers/uack.bib">
-              <i class="fa fa-file-o"></i> bibtex
-            </a>
-          </span>
-          <div id="abstract_uack" class="abstract well">
-            Retransmissions reduce the efficiency of data communication in
-            wireless networks because of: (i) per-retransmission packet headers,
-            (ii) contention overhead on every retransmission, and (iii)
-            redundant bits in every retransmission. In fact, every
-            retransmission nearly doubles the time to successfully deliver the
-            packet. To improve spectrum efficiency in a lossy environment, we
-            propose a new in-frame retransmission scheme using µACKs. Instead of
-            waiting for the entire transmission to end before sending the ACK,
-            the receiver sends smaller µACKs for every few symbols, on a
-            separate narrow feedback channel. Based on these µACKs, the sender
-            only retransmits the lost symbols after the last data symbol in the
-            frame, thereby adaptively changing the frame size to ensure it is
-            successfully delivered. We have implemented µACK on the Sora
-            platform.  Experiments with our prototype validate the feasibility
-            of symbollevel µACK. By significantly reducing the retransmistion
-            overhead, the sender is able to aggressively use higher data rate
-            for a lossy link. Both improve the overall network efficiency. Our
-            experimental results from a controlled environment and an 9-node
-            software radio testbed show that µACK can have up to 140% throughput
-            gain over 802.11g and up to 60% gain over the best known
-            retransmission scheme.
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-
-    <!--
-         <div class="list-group-item">
-           <ul class="pub">
-             <li>Accelerating the Mobile Web with Selective Offloading</li>
-             <li>Xiao Sophia Wang, <strong>Haichen Shen</strong>, David Wetherall</li>
-             <li>SIGCOMM Workshop MCC, Aug. 2013 [<a href="papers/mcc13_final.pdf">PDF</a>]</li>
-           </ul>
-         </div>
-         <div class="list-group-item">
-           <ul class="pub">
-             <li>Using Taint Tracking to Improve Energy Efficiency of Always-on Smartphone Apps</li>
-             <li><strong>Haichen Shen</strong>, Aruna Balasubramanian, Anthony LaMarca, David Wetherall</li>
-             <li>NSDI, Apr. 2013 <span class="label label-info">Poster</span> [<a href="papers/nsdi13_proposal.pdf">PDF</a>] [<a href="posters/nsdi13_poster.pdf">Poster</a>] </li>
-           </ul>
-         </div>
-         <div class="paper">
-           <div class="pubtitle">MPAP: virtualization architecture for heterogenous wireless APs</div>
-           <div class="author">Yong He, Ji Fang, Jiansong Zhang, <strong>Haichen Shen</strong>, Kun Tan, and Yongguang Zhang</div>
-           SIGCOMM, Aug. 2010 [<a href="papers/mpap.pdf">pdf</a>]<br>
-           <strong><span class="text-danger">Best demo award</span></strong>
-         </div>
-  </div>
-  </div> -->
-
-    <div class="row">
-      <div class="col-md-10">
-        <h3>Teaching Experience</h3>
-        <ul>
-          <li>Instructor for <a href="http://dlsys.cs.washington.edu/">CSE 599G1</a>: Deep Learning System, Spring 2017.</li>
-          <li>TA for <a href="http://courses.cs.washington.edu/courses/csep552/16wi/">CSEP 552</a>: Distributed Systems, Winter 2016.</li>
-          <li>TA for <a href="https://courses.cs.washington.edu/courses/csep561/13au/">CSEP 561</a>: Network Systems, Fall 2013.</li>
+              networks.
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="paper">
+          <li class="pubtitle">Frame Retransmissions Considered Harmful: Improving Spectrum Efficiency Using Micro-ACKs</li>
+          <li class="author">Jiansong Zhang, <strong>Haichen Shen</strong>, Kun Tan, Ranveer Chandra, Yongguang Zhang, Qian Zhang</li>
+          <li class="conf">MobiCom, Aug. 2012</li>
+          <li>
+            <span class="links btn-group">
+              <a class="btn btn-sm btn-secondary dropdown-toggle" href="javascript:void(0);" onclick="$('#abstract_uack').slideToggle('fast');return false;">
+                <i class="fa fa-chevron-down"></i> abstract</a>
+              <a class="btn btn-sm btn-secondary" href="papers/uack.pdf">
+                <i class="fa fa-file-pdf"></i> paper
+              </a>
+              <a class="btn btn-sm btn-secondary" href="papers/uack.bib">
+                <i class="fa fa-file"></i> bibtex
+              </a>
+            </span>
+            <div id="abstract_uack" class="abstract">
+              Retransmissions reduce the efficiency of data communication in
+              wireless networks because of: (i) per-retransmission packet headers,
+              (ii) contention overhead on every retransmission, and (iii)
+              redundant bits in every retransmission. In fact, every
+              retransmission nearly doubles the time to successfully deliver the
+              packet. To improve spectrum efficiency in a lossy environment, we
+              propose a new in-frame retransmission scheme using µACKs. Instead of
+              waiting for the entire transmission to end before sending the ACK,
+              the receiver sends smaller µACKs for every few symbols, on a
+              separate narrow feedback channel. Based on these µACKs, the sender
+              only retransmits the lost symbols after the last data symbol in the
+              frame, thereby adaptively changing the frame size to ensure it is
+              successfully delivered. We have implemented µACK on the Sora
+              platform.  Experiments with our prototype validate the feasibility
+              of symbollevel µACK. By significantly reducing the retransmistion
+              overhead, the sender is able to aggressively use higher data rate
+              for a lossy link. Both improve the overall network efficiency. Our
+              experimental results from a controlled environment and an 9-node
+              software radio testbed show that µACK can have up to 140% throughput
+              gain over 802.11g and up to 60% gain over the best known
+              retransmission scheme.
+            </div>
+          </li>
         </ul>
       </div>
     </div>
-    <br>
-    <small>Last update: Jan. 2018</small>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Contact Me</h2>
+
+      <!-- Contact Section Form -->
+      <div class="text-center">
+          <a class="btn btn-outline-dark btn-social mx-1" href="https://www.linkedin.com/in/haichenshen/">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-dark btn-social mx-1" href="https://github.com/icemelon9">
+            <i class="fab fa-fw fa-github"></i>
+          </a>
+          <a class="btn btn-outline-dark btn-social mx-1" href="https://www.facebook.com/shenhaichen">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-dark btn-social mx-1" href="https://twitter.com/shenhaichen">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+        </div>
+        <!-- <div class="col-lg-8 mx-auto"> -->
+        <!--   <\!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -\-> -->
+        <!--   <form name="sentMessage" id="contactForm" novalidate="novalidate"> -->
+        <!--     <div class="control-group"> -->
+        <!--       <div class="form-group floating-label-form-group controls mb-0 pb-2"> -->
+        <!--         <label>Name</label> -->
+        <!--         <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name."> -->
+        <!--         <p class="help-block text-danger"></p> -->
+        <!--       </div> -->
+        <!--     </div> -->
+        <!--     <div class="control-group"> -->
+        <!--       <div class="form-group floating-label-form-group controls mb-0 pb-2"> -->
+        <!--         <label>Email Address</label> -->
+        <!--         <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address."> -->
+        <!--         <p class="help-block text-danger"></p> -->
+        <!--       </div> -->
+        <!--     </div> -->
+        <!--     <div class="control-group"> -->
+        <!--       <div class="form-group floating-label-form-group controls mb-0 pb-2"> -->
+        <!--         <label>Phone Number</label> -->
+        <!--         <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number."> -->
+        <!--         <p class="help-block text-danger"></p> -->
+        <!--       </div> -->
+        <!--     </div> -->
+        <!--     <div class="control-group"> -->
+        <!--       <div class="form-group floating-label-form-group controls mb-0 pb-2"> -->
+        <!--         <label>Message</label> -->
+        <!--         <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea> -->
+        <!--         <p class="help-block text-danger"></p> -->
+        <!--       </div> -->
+        <!--     </div> -->
+        <!--     <br> -->
+        <!--     <div id="success"></div> -->
+        <!--     <div class="form-group"> -->
+        <!--       <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button> -->
+        <!--     </div> -->
+        <!--   </form> -->
+        <!-- </div> -->
+
+    </div>
+  </section>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Haichen Shen 2019</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
   </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="js/header.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
 </body>
+
 </html>

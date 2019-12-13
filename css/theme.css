@@ -1,0 +1,30 @@
+.abstract {
+  display: none;
+  padding: 1.25rem;
+  color: #fff;
+  background-color: #343a40;
+  -moz-box-shadow:    inset 0 0 8px #000;
+  -webkit-box-shadow: inset 0 0 8px #000;
+  box-shadow:         inset 0 0 8px #000;
+}
+
+ul.paper {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.pubtitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.author {
+  font-size: 1.1rem;
+}
+
+.conf {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 0.25rem !important;
+}
+
